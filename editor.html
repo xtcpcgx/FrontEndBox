@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rafael Piao</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Rafael Piao" />
+		
+		<link type="text/css" href="style/baisc/base.css" rel="stylesheet" />
+		<link type="text/css" href="style/baisc/common.css" rel="stylesheet" />
+		<link type="text/css" href="style/baisc/editor.css" rel="stylesheet" />
+		<link type="text/css" href="style/baisc/codemirror.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/libs/dojo_1.8.1.js"  data-dojo-config="async: true">
+		</script>
+		<script type="text/javascript" src="js/libs/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="js/editor.js" ></script>
+		<script type="text/javascript" src="js/codemirror.js" ></script>
+		<script type="text/javascript" src="js/cm_mode.js" ></script>
+	</head>
+
+	<body>
+		<div class ="header">
+			这是标题
+		</div>
+		<div id="content" class="content">
+			<div class="nav p5">
+				<div id="chooseFramework_panel">
+					<span class="nav_item">选择框架</span>
+					<div>
+						<select id="chooseFramework_load" class="w150">
+							<option id="noWrap_head">no_wrap(head)</option>
+							<option id="noWrap_body">no_wrap(body)</option>
+						</select>
+					</div>
+					<div>
+						<select id="chooseFramework_name" class="w150">
+							<option id="dojo">dojo</option>
+							<option id="jquery">jquery</option>
+						</select>
+					</div>
+				</div>
+				<div id="webInfo">
+					<span class="nav_item">网页信息</span>
+					<ul class="none">
+						<li><label for="webInfo_title">标题</label></li>
+						<li><input type="text" id="webInfo_title" /></li>
+					</ul>
+				</div>
+				<div id="webPanel">
+					<span class="nav_item">网页面板</span>
+						<ul class="none">
+							<li>
+								<label for="webPanel_dtd">DTD</label>
+								<select id="webPanel_dtd" class="w150">
+									<option id="webPanel_dtd_dojo">dojo</option>
+									<option id="webPanel_dtd_jQuery">jquery</option>
+								</select>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<div class="content_panel">
+				<div class="tool_bar">
+					
+				</div>
+				<fieldset class="editor_set left">
+					<div class="window top">
+						<textarea id="code_html" class="inputField"></textarea>
+					</div>
+					<div class="handler handler_horizontal">
+						
+					</div>
+					<div class="window bottom">
+						<textarea id="code_js" class="inputField"></textarea>
+					</div>
+				</fieldset>
+				<div class="handler handler_vertical"> 
+				</div>
+				<fieldset class="editor_set right">
+					<div class="window top">
+						<textarea id="code_css" class="inputField"></textarea>
+					</div>
+					<div class="handler handler_horizontal">
+						
+					</div>
+					<div class="window bottom">
+						<iframe class="mt10 ml10" src="index.html"></iframe>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+	</body>
+</html>

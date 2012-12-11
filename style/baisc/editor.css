@@ -1,0 +1,49 @@
+
+.header {
+	height: 45px;
+}
+
+.content {
+	width: 100%;
+}
+
+.nav {
+	float: left;
+	width: 16%;
+	min-height: 500px;
+/*	border: 1px solid #eee;*/
+}
+
+.content_panel {
+	float: right;
+	width: 83%;
+}
+
+fieldset {
+	float: left;
+}
+.window {
+	border: 1px solid #AA5500;
+	padding-bottom: 20px;
+}
+
+.window iframe {
+	width: 95%;
+	height: 100%;
+}
+
+.inputField {
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+}
+
+.handler_horizontal {
+	height: 8px;
+	cursor: row-resize;
+}
+.handler_vertical {
+	float: left;
+	width: 8px;
+	cursor: col-resize;
+}
